@@ -11,7 +11,7 @@ info:
     name: Apache
     url: https://github.com/sdhjn19dj1m/afarensis-openapi/blob/master/LICENSE
 servers:
-  - url: https://api.afarensis.com/v1
+  - url: https://api2.afarensis.com/v1
 tags:
   - name: Assistants
     description: Build Assistants that can call models and use tools.
@@ -66,7 +66,7 @@ paths:
           - title: Default
             request:
               curl: |
-                curl https://api.afarensis.com/v1/chat/completions \
+                curl https://api2.afarensis.com/v1/chat/completions \
                   -H "Content-Type: application/json" \
                   -H "Authorization: Bearer $AFARENSIS_API_KEY" \
                   -d '{
@@ -96,7 +96,7 @@ paths:
 
                 print(completion.choices[0].message)
               node.js: |-
-                import Afarensis from "ai";
+                import AI from "Afarensis";
 
                 const afarensis = new AI();
 
@@ -135,7 +135,7 @@ paths:
           - title: Image input
             request:
               curl: |
-                curl https://api.afarensis.com/v1/chat/completions \
+                curl https://api2.afarensis.com/v1/chat/completions \
                   -H "Content-Type: application/json" \
                   -H "Authorization: Bearer $AFARENSIS_API_KEY" \
                   -d '{
@@ -232,7 +232,7 @@ paths:
           - title: Streaming
             request:
               curl: |
-                curl https://api.afarensis.com/v1/chat/completions \
+                curl https://api2.afarensis.com/v1/chat/completions \
                   -H "Content-Type: application/json" \
                   -H "Authorization: Bearer $AFARENSIS_API_KEY" \
                   -d '{
@@ -297,7 +297,7 @@ paths:
           - title: Functions
             request:
               curl: |
-                curl https://api.afarensis.com/v1/chat/completions \
+                curl https://api2.afarensis.com/v1/chat/completions \
                 -H "Content-Type: application/json" \
                 -H "Authorization: Bearer $AFARENSIS_API_KEY" \
                 -d '{
@@ -441,7 +441,7 @@ paths:
           - title: Logprobs
             request:
               curl: |
-                curl https://api.afarensis.com/v1/chat/completions \
+                curl https://api2.afarensis.com/v1/chat/completions \
                   -H "Content-Type: application/json" \
                   -H "Authorization: Bearer $AFARENSIS_API_KEY" \
                   -d '{

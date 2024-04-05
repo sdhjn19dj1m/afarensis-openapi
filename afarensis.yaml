@@ -1,15 +1,15 @@
-openapi: 3.0.0
+afarensis: 1.0.0
 info:
-  title: OpenAI API
-  description: The OpenAI REST API. Please see https://platform.openai.com/docs/api-reference for more details.
-  version: "2.0.0"
-  termsOfService: https://openai.com/policies/terms-of-use
+  title: afarensis API
+  description: Afarensis REST API. Please see https://doc.afarensis.com for more details.
+  version: "1.0.0"
+  termsOfService: https://afarensis.com/policies/terms-of-use
   contact:
-    name: OpenAI Support
-    url: https://help.openai.com/
+    name: Afarensis Support
+    url: https://help.afarensis.com/
   license:
-    name: MIT
-    url: https://github.com/openai/openai-openapi/blob/master/LICENSE
+    name: APACPHE
+    url: https://github.com/sdhjn19dj1m/afarensis/blob/master/LICENSE
 servers:
   - url: https://api2.afarensis.com/v1
 tags:
